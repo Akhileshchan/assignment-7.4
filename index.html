@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+</head>
+<script type="text/javascript">
+function(){
+	var outer function=function(varA){
+		console.debug('value of varA in outer function'+varA);
+var inner function=function(){
+	console.debug(value of varA in inner function  +varA);
+   }
+   inner function();
+};
+outer function("hi");
+var buggyouterfunction =function(varA){
+	console.debug('value of varA in buggy outer function' +varA);
+	var buggyouterfunction=function(){
+		var varA=varA//"'hello";
+		console.debug('value of varA  in inner function'+varA);  
+}
+buggyinerfunction();
+};
+buggyouterfunction(" hi");
+})();
+</script>
+	
+</body>
+
+</html>
